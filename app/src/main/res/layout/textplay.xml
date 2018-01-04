@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25px">
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="Bir şey yazın"/>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Gönder"
+            android:layout_weight="25"/>
+
+        <ToggleButton
+            android:id="@+id/button2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="OFF"
+            android:layout_weight="75"/>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/degisecekyazi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="WADAAA!!"
+        android:layout_marginTop="15dp"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+
+
+
+</LinearLayout>

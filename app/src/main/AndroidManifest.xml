@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="android.tugcekolcu.firstapplication">
+
+
+    <!-- android:label uygulamanin adi -->
+    <!-- android:icon uygulama ikonu -->
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="com.android.tugcekolcu.firstapplication.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Menu">
+            <intent-filter>
+                <action android:name="com.android.tugcekolcu.firstapplication.MENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ListeOrnek">
+            <intent-filter>
+                <action android:name="com.android.tugcekolcu.firstapplication.LISTEORNEK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".TextPlay">
+            <intent-filter>
+                <action android:name="com.android.tugcekolcu.firstapplication.TEXTPLAY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".HosgeldinEkrani">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" /> <!-- Launcher acilista ilk olarak bunu calistir demek -->
+            </intent-filter>
+        </activity>
+
+
+
+    </application>
+
+</manifest>
