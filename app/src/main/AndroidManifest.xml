@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="android.tugcekolcu.firstapplication">
 
+    <uses-permission android:name="android.permission.SET_WALLPAPER"></uses-permission>
+
 
     <!-- android:label uygulamanin adi -->
     <!-- android:icon uygulama ikonu -->
@@ -48,6 +50,24 @@
             </intent-filter>
         </activity>
 
+
+        <activity android:name=".Email">
+            <intent-filter>
+                <action android:name="com.android.tugcekolcu.firstapplication.EMAIL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ResimCek">
+            <intent-filter>
+                <action android:name="com.android.tugcekolcu.firstapplication.RESIMCEK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
         <activity android:name=".HosgeldinEkrani">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -55,6 +75,7 @@
                 <category android:name="android.intent.category.LAUNCHER" /> <!-- Launcher acilista ilk olarak bunu calistir demek -->
             </intent-filter>
         </activity>
+
 
 
 
