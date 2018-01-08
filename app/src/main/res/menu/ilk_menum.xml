@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/about"
+        android:alphabeticShortcut="h"
+        android:numericShortcut="1"
+        android:title="Hakkımda"/>
+
+    <item
+        android:id="@+id/settings"
+        android:alphabeticShortcut="h"
+        android:numericShortcut="1"
+        android:title="Ayarlar"/>
+
+    <item
+        android:id="@+id/exit"
+        android:alphabeticShortcut="h"
+        android:numericShortcut="1"
+        android:title="Çıkış"/>
+
+
+
+
+</menu>

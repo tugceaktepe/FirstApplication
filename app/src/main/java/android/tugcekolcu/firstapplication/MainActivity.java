@@ -3,7 +3,7 @@ package android.tugcekolcu.firstapplication;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
+import android.view.*;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -41,11 +41,24 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(android.view.Menu menu) {
+
+        super.onCreateOptionsMenu(menu);
+        MenuInflater myMenu = getMenuInflater();
+        myMenu.inflate(R.menu.ilk_menum,menu);
+
+        return true;
+    }
+
     @Override
     protected void onPause() {
         super.onPause();
         Log.e("LIFECYCLE", "MainActivity onPause çalıştırıldı");
 
     }
+
+
 
 }
