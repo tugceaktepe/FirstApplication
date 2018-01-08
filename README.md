@@ -9,4 +9,4 @@
 -  ->EditText : InputType.TYPE_TEXT_VARIATION_PASSWORD
 -  ->Color.rgb(.,.,.)
 -  ->Clean code : init() for view set, onClick from OnClickListener interface () 
-  
+-  ->Send Mail
