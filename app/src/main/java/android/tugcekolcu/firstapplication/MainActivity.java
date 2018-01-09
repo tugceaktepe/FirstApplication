@@ -58,7 +58,14 @@ public class MainActivity extends AppCompatActivity {
             case R.id.about:
                 Intent intentHakkimda = new Intent("com.android.tugcekolcu.firstapplication.HAKKIMDA");
                 startActivity(intentHakkimda);
-
+                break;
+            case R.id.settings:
+                Intent intentSettings = new Intent("com.android.tugcekolcu.firstapplication.AYAR");
+                startActivity(intentSettings);
+                break;
+            case R.id.exit:
+                finish();
+                break;
         }
         return   super.onOptionsItemSelected(item);
 
