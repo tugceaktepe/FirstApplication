@@ -1,5 +1,6 @@
 package android.tugcekolcu.firstapplication;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -44,12 +45,23 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(android.view.Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.ilk_menum, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
 
-        super.onCreateOptionsMenu(menu);
-        MenuInflater myMenu = getMenuInflater();
-        myMenu.inflate(R.menu.ilk_menum,menu);
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
 
-        return true;
+        switch (item.getItemId()){
+
+            case R.id.about:
+                Intent intentHakkimda = new Intent("com.android.tugcekolcu.firstapplication.HAKKIMDA");
+                startActivity(intentHakkimda);
+
+        }
+        return   super.onOptionsItemSelected(item);
+
     }
 
     @Override

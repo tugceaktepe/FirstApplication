@@ -67,6 +67,14 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".Hakkimda"
+                    android:theme="@style/Animation.AppCompat.Dialog" >
+            <intent-filter>
+                <action android:name="com.android.tugcekolcu.firstapplication.HAKKIMDA" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
         <activity android:name=".HosgeldinEkrani">
             <intent-filter>

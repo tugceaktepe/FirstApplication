@@ -2,8 +2,9 @@ package android.tugcekolcu.firstapplication;
 
 import android.app.ListActivity;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.util.Log;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -14,10 +15,10 @@ import android.content.Intent;
 
 public class Menu extends ListActivity {
 
-    String myClasses [] = {"MainActivity","ListeOrnek","TextPlay","ornek3"};
+    String myClasses [] = {"MainActivity","ListeOrnek","TextPlay","Email","ResimCek"};
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         //listeyi stringe baglamak icin adapter lazim.
@@ -42,6 +43,9 @@ public class Menu extends ListActivity {
 
 
     }
+
+
+
     @Override
     protected void onPause() {
         super.onPause();
