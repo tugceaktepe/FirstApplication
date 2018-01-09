@@ -12,3 +12,4 @@
 -  ->Send Mail
 -  ->Permissions for capturing
 -  ->Menu Creation ...
+-  ->Shared Preferences
