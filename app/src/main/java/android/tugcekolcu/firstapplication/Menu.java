@@ -6,6 +6,8 @@ import android.util.Log;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.content.Intent;
@@ -20,6 +22,11 @@ public class Menu extends ListActivity {
     @Override
     protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
+        //Full ekran calisma
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         //listeyi stringe baglamak icin adapter lazim.
         ArrayAdapter myAdapter = new ArrayAdapter(this,android.R.layout.simple_list_item_1,myClasses);

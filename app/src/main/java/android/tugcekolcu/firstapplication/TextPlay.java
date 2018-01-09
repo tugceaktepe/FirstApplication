@@ -3,7 +3,7 @@ package android.tugcekolcu.firstapplication;
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import android.preference.PreferenceActivity;
 import android.text.InputType;
 import android.view.Gravity;
 import android.view.View;
@@ -99,5 +99,18 @@ public class TextPlay extends Activity implements View.OnClickListener{
         textOnScreen = (TextView) findViewById(R.id.degisecekyazi);
         btnSend = (Button) findViewById(R.id.button);
         tbChange = (ToggleButton) findViewById(R.id.button2);
+    }
+
+    /**
+     * Created by tugcekolcu on 9.01.2018.
+     */
+
+    public static class Ayar extends PreferenceActivity {
+
+        @Override
+        protected void onCreate( Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            addPreferencesFromResource(R.xml.ayar);
+        }
     }
 }
