@@ -13,3 +13,5 @@
 -  ->Permissions for capturing
 -  ->Menu Creation ...
 -  ->Shared Preferences
+-  ->Change button appearance 
+-  ->run application page in Full screen 
