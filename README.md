@@ -11,3 +11,4 @@
 -  ->Clean code : init() for view set, onClick from OnClickListener interface () 
 -  ->Send Mail
 -  ->Permissions for capturing
+-  ->Menu Creation ...
