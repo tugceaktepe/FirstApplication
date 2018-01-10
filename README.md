@@ -15,3 +15,5 @@
 -  ->Shared Preferences
 -  ->Change button appearance 
 -  ->run application page in Full screen 
+-  ->TabHost, TabSpec (tab usage)
+-  ->Creating a browser with WebViewer
