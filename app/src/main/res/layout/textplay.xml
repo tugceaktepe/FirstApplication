@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="25px">
+    android:padding="25px"
+    android:background="@color/colorBlue">
 
 
     <EditText
@@ -36,6 +37,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="OFF"
+            android:checked="true"
             android:layout_weight="75"/>
 
 
