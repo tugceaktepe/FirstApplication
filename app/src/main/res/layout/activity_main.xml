@@ -21,6 +21,7 @@
         android:layout_height="wrap_content"
         android:text="Ekle"
         android:gravity="center"
+        android:background="@drawable/kisiseleklebutonu"
         android:layout_gravity="center"
         />
     <Button

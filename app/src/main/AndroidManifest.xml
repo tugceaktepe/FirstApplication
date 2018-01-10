@@ -3,6 +3,7 @@
     package="android.tugcekolcu.firstapplication">
 
     <uses-permission android:name="android.permission.SET_WALLPAPER"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 
 
     <!-- android:label uygulamanin adi -->
@@ -80,6 +81,24 @@
              >
             <intent-filter>
                 <action android:name="com.android.tugcekolcu.firstapplication.AYAR" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Tablar"
+            >
+            <intent-filter>
+                <action android:name="com.android.tugcekolcu.firstapplication.TABLAR" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Tarayici"
+            >
+            <intent-filter>
+                <action android:name="com.android.tugcekolcu.firstapplication.TARAYICI" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
