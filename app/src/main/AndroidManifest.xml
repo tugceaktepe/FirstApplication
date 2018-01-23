@@ -104,6 +104,15 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".Flipper"
+            >
+            <intent-filter>
+                <action android:name="com.android.tugcekolcu.firstapplication.FLIPPER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
         <activity android:name=".HosgeldinEkrani">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

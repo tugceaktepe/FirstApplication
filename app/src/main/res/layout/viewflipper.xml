@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="40"
+        android:orientation="vertical">
+
+        <ViewFlipper
+            android:id="@+id/viewFlipper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBlue"
+            android:text="bu birinci sayfa bu birinci sayfa bu birinci sayfa bu birinci sayfa bu birinci sayfa" />
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="bu ikinci sayfa bu ikinci sayfa bu ikinci sayfa bu ikinci sayfa bu ikinci sayfa" />
+
+
+        <TextView
+            android:id="@+id/textview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="bu ucuncu sayfa bu ucuncu sayfa bu ucuncu sayfa bu ucuncu sayfa bu ucuncu sayfa" />
+
+        </ViewFlipper>
+
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="60"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bGeri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Geri" />
+
+        <Button
+            android:id="@+id/bIleri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ileri" />
+
+        <Button
+            android:id="@+id/bOtomatik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Otomatik" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
