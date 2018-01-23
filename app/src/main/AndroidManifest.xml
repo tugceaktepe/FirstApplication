@@ -123,6 +123,14 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".InternalData"
+            >
+            <intent-filter>
+                <action android:name="com.android.tugcekolcu.firstapplication.INTERNALDATA" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
         <activity android:name=".HosgeldinEkrani">
             <intent-filter>
