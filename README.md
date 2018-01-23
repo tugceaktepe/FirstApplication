@@ -3,8 +3,8 @@
 -  -> Thread, Intent
 -  ->AndroidManifest.xml
 -  ->Activity Cycle
-- ->List Activity with onListItemClick
-- ->ListView with OnItemClickListener
+-  ->List Activity with onListItemClick
+-  ->ListView with OnItemClickListener
 -  ->Layout padding, margin, weightsum, togglebutton
 -  ->EditText : InputType.TYPE_TEXT_VARIATION_PASSWORD
 -  ->Color.rgb(.,.,.)
@@ -17,3 +17,4 @@
 -  ->run application page in Full screen 
 -  ->TabHost, TabSpec (tab usage)
 -  ->Creating a browser with WebViewer
+-  ->ViewFlipper example
