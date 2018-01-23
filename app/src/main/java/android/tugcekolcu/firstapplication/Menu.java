@@ -17,7 +17,7 @@ import android.content.Intent;
 
 public class Menu extends ListActivity {
 
-    String myClasses [] = {"MainActivity","ListeOrnek","TextPlay","Email","ResimCek","Tablar","Tarayici", "Flipper"};
+    String myClasses [] = {"MainActivity","ListeOrnek","TextPlay","Email","ResimCek","Tablar","Tarayici", "Flipper","SharedPreferenceScreen"};
 
     @Override
     protected void onCreate( Bundle savedInstanceState) {
