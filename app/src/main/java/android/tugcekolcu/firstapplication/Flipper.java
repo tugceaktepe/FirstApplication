@@ -39,9 +39,7 @@ public class Flipper extends Activity implements View.OnClickListener    {
     @Override
     public void onClick(View v) {
 
-
         switch (v.getId()){
-
 
             case R.id.bGeri:
                 if(flipper.isFlipping()){
