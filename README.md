@@ -18,3 +18,4 @@
 -  ->TabHost, TabSpec (tab usage)
 -  ->Creating a browser with WebViewer
 -  ->ViewFlipper example
+-  ->FileInputStream & FileOutputStream
