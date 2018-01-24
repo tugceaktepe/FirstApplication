@@ -20,3 +20,6 @@
 -  ->ViewFlipper example
 -  ->FileInputStream & FileOutputStream
 -  ->Async Task
+-  ->External Storage & Runtime permission
+-  ->Spinner 
+-  ->Adapter 
