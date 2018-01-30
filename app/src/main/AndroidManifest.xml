@@ -143,6 +143,25 @@
             </intent-filter>
         </activity>
 
+
+        <activity android:name=".InsanlarDBUygulamasi"
+            >
+            <intent-filter>
+                <action android:name="com.android.tugcekolcu.firstapplication.INSANLARDBUYGULAMASI" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".PersonList"
+            >
+            <intent-filter>
+                <action android:name="com.android.tugcekolcu.firstapplication.PERSONLIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
         <activity android:name=".HosgeldinEkrani">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
