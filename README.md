@@ -23,3 +23,4 @@
 -  ->External Storage & Runtime permission
 -  ->Spinner 
 -  ->Adapter 
+-  ->SQLite Create Table, Insert, Update Operations
