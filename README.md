@@ -1,4 +1,5 @@
 # AndroidExamples
+-  These examples from  Emre Altunbilek's UDEMY course
 -  -> Button, textview, layout
 -  -> Thread, Intent
 -  ->AndroidManifest.xml
