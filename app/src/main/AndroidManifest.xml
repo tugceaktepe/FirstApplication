@@ -162,6 +162,15 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".UpdatePerson"
+            >
+            <intent-filter>
+                <action android:name="com.android.tugcekolcu.firstapplication.UPDATEPERSON" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
         <activity android:name=".HosgeldinEkrani">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

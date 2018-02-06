@@ -13,7 +13,7 @@ import java.util.List;
  * Created by tugcekolcu on 28.01.2018.
  */
 
-public class PersonDatabase extends SQLiteOpenHelper{
+public class PersonDatabase extends SQLiteOpenHelper {
 
 
     // All Static variables
@@ -77,14 +77,14 @@ public class PersonDatabase extends SQLiteOpenHelper{
 
         SQLiteDatabase db = this.getReadableDatabase();
 
-        Cursor cursor = db.query(TABLE_PERSON, new String[] { KEY_ID,
-                        KEY_NAME, KEY_SURNAME,KEY_AGE }, KEY_ID + "=?",
-                new String[] { String.valueOf(id) }, null, null, null, null);
+        Cursor cursor = db.query(TABLE_PERSON, new String[]{KEY_ID,
+                        KEY_NAME, KEY_SURNAME, KEY_AGE}, KEY_ID + "=?",
+                new String[]{String.valueOf(id)}, null, null, null, null);
         if (cursor != null)
             cursor.moveToFirst();
 
         Person p = new Person(Integer.parseInt(cursor.getString(0)),
-                cursor.getString(1), cursor.getString(2),cursor.getString(3));
+                cursor.getString(1), cursor.getString(2), cursor.getString(3));
         return p;
 
     }
@@ -100,7 +100,7 @@ public class PersonDatabase extends SQLiteOpenHelper{
         if (cursor.moveToFirst()) {
             do {
                 Person p = new Person(Integer.parseInt(cursor.getString(0)),
-                        cursor.getString(1), cursor.getString(2),cursor.getString(3));                // Adding contact to list
+                        cursor.getString(1), cursor.getString(2), cursor.getString(3));                // Adding contact to list
                 pList.add(p);
             } while (cursor.moveToNext());
         }
@@ -119,6 +119,7 @@ public class PersonDatabase extends SQLiteOpenHelper{
 
         return cursor.getCount();
     }
+
     // Updating single person
     public int updatePerson(Person p) {
 
@@ -132,14 +133,14 @@ public class PersonDatabase extends SQLiteOpenHelper{
 
         // updating row
         return db.update(TABLE_PERSON, values, KEY_ID + " = ?",
-                new String[] { String.valueOf(p.getId()) });
+                new String[]{String.valueOf(p.getId())});
     }
 
     // Deleting single person
-    public void deletePerson(Person p) {
+    public void deletePerson(int pID) {
         SQLiteDatabase db = this.getWritableDatabase();
         db.delete(TABLE_PERSON, KEY_ID + " = ?",
-                new String[] { String.valueOf(p.getId()) });
+                new String[]{String.valueOf(pID)});
         db.close();
 
     }
