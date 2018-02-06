@@ -24,4 +24,5 @@
 -  ->External Storage & Runtime permission
 -  ->Spinner 
 -  ->Adapter 
--  ->SQLite Create Table, Insert, Update Operations
+-  ->SQLite Create Table, Insert, Update, Delete Operations
+-  ->Passing data to another activity (Bundle getExtras())
